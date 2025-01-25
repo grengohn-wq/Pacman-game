@@ -833,7 +833,7 @@ var PACMAN = (function () {
     }
 
     function keyDown(e) {
-        if (e.keyCode === KEY.N) {
+        if (e.keyCode === KEY.S) {
             startNewGame();
         } else if (e.keyCode === KEY.S) {
             audio.disableSound();
@@ -1081,7 +1081,7 @@ var PACMAN = (function () {
         
     function loaded() {
 
-        dialog("Press N to Start");
+        dialog("Press S to Start or P to Pause");
         
         document.addEventListener("keydown", keyDown, true);
         document.addEventListener("keypress", keyPress, true); 
